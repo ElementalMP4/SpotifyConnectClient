@@ -1,4 +1,4 @@
-apt-get install git maven openjdk-17-jdk -y
+sudo apt-get install git maven openjdk-17-jdk -y
 
 git clone https://github.com/ElementalMP4/RaspiSonos /var/tmp/RaspiSonos
 git clone https://github.com/ElementalMP4/librespot-java /var/tmp/librespot-java
