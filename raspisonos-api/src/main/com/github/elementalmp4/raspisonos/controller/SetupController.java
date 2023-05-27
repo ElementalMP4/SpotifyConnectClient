@@ -17,6 +17,12 @@ public class SetupController {
         setupService.setupWifi(ssid, psk);
     }
 
+    @PostMapping("/setup/spotify")
+    void setupSpotify(@RequestParam String email, @RequestParam String password) {
+        setupService.setupSpotify(email, password);
+    }
+
+
     @PostMapping("/setup/reboot")
     void reboot() {
         setupService.reboot();
