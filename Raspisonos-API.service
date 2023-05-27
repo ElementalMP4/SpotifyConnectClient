@@ -1,0 +1,14 @@
+[Unit]
+Description=RaspiSonos API
+After=network.target
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/pi/RaspiSonos/raspisonos-api.sh
+ExecStop=/bin/kill -15 $MAINPID
+SuccessExitStatus=143
+Restart=always
+RestartSec=120
+CPUAccounting=yes
+MemoryAccounting=yes
+[Install]
+WantedBy=default.target
