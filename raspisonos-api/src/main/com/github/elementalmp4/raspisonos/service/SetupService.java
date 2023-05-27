@@ -38,7 +38,7 @@ public class SetupService {
     public void shutdown() {
         try {
             Runtime runtime = Runtime.getRuntime();
-            runtime.exec("sudo shutdown now");
+            runtime.exec("sudo shutdown -s now");
             System.exit(0);
         } catch (IOException e) {
             throw new RuntimeException(e);
