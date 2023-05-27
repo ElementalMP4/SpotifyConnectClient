@@ -1,0 +1,14 @@
+[Unit]
+Description=Librespot Java Service
+After=network.target
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/pi/RaspiSonos/librespot-java.sh
+ExecStop=/bin/kill -15 $MAINPID
+SuccessExitStatus=143
+Restart=always
+RestartSec=120
+CPUAccounting=yes
+MemoryAccounting=yes
+[Install]
+WantedBy=default.target
