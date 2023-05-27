@@ -35,6 +35,17 @@ public class SetupService {
         }
     }
 
+    public void shutdown() {
+        try {
+            Runtime runtime = Runtime.getRuntime();
+            runtime.exec("sudo shutdown now");
+            System.exit(0);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
     public void setupSpotify(String email, String password) {
         Template wifiTemplate = new Template("librespot-config.tmpl");
         String config = wifiTemplate.set("SPOTIFY_EMAIL", email).set("SPOTIFY_PASSWORD", password).toString();

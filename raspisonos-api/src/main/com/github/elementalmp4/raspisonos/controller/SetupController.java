@@ -22,9 +22,13 @@ public class SetupController {
         setupService.setupSpotify(email, password);
     }
 
-
     @PostMapping("/setup/reboot")
     void reboot() {
         setupService.reboot();
+    }
+
+    @PostMapping("/setup/shutdown")
+    void shutdown() {
+        setupService.shutdown();
     }
 }
