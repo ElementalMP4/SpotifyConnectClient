@@ -19,7 +19,7 @@ public class Template {
     }
 
     public Template set(String key, String value) {
-        this.theTemplate = this.theTemplate.replaceAll("{{" + key + "}}", value);
+        this.theTemplate = this.theTemplate.replace("{{" + key + "}}", value);
         return this;
     }
 
