@@ -19,3 +19,8 @@ cp /var/tmp/RaspiSonos/LibrespotJava.service /usr/lib/systemd/system/
 systemctl daemon-reload
 systemctl enable LibrespotJava
 systemctl start LibrespotJava
+
+#Drop in the config template
+cp /var/tmp/RaspiSonos/config.toml.tmpl /home/pi/RaspiSonos/config.toml
+systemctl restart LibrespotJava
+
