@@ -16,4 +16,9 @@ public class SetupController {
     void setupWifi(@RequestParam String ssid, @RequestParam String psk) {
         setupService.setupWifi(ssid, psk);
     }
+
+    @PostMapping("/setup/reboot")
+    void reboot() {
+        setupService.reboot();
+    }
 }

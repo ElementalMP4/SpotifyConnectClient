@@ -24,4 +24,13 @@ public class SetupService {
         }
     }
 
+    public void reboot() {
+        try {
+            Runtime runtime = Runtime.getRuntime();
+            runtime.exec("sudo reboot now");
+            System.exit(0);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
