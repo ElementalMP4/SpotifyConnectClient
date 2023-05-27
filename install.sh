@@ -37,3 +37,5 @@ cp /var/tmp/RaspiSonos/RaspiSonos-API.service /usr/lib/systemd/system/
 systemctl daemon-reload
 systemctl enable RaspiSonos-API
 systemctl start RaspiSonos-API
+
+sudo rm -rf /var/tmp/RaspiSonos /var/tmp/librespot-java
