@@ -20,10 +20,6 @@ systemctl daemon-reload
 systemctl enable LibrespotJava
 systemctl start LibrespotJava
 
-echo Drop in the config template
-cp /var/tmp/RaspiSonos/config.toml.tmpl /home/pi/RaspiSonos/config.toml
-systemctl restart LibrespotJava
-
 echo Build raspisonos-api
 cd /var/tmp/RaspiSonos/raspisonos-api
 mvn clean package
