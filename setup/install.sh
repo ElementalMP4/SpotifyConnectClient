@@ -14,8 +14,8 @@ echo Put librespot-java in the home dir
 cp target/librespot-api-1.6.3.jar /home/pi/RaspiSonos/librespot.jar
 
 echo Set up the systemctl unit for librespot-java
-cp /var/tmp/RaspiSonos/librespot-java.sh /home/pi/RaspiSonos/
-cp /var/tmp/RaspiSonos/LibrespotJava.service /usr/lib/systemd/system/
+cp /var/tmp/RaspiSonos/setup/librespot-java.sh /home/pi/RaspiSonos/
+cp /var/tmp/RaspiSonos/setup/LibrespotJava.service /usr/lib/systemd/system/
 systemctl daemon-reload
 systemctl enable LibrespotJava
 systemctl start LibrespotJava
@@ -28,8 +28,8 @@ echo Put raspisonos-api in the home dir
 cp target/original-RaspiSonos-API-0.0.1.jar /home/pi/RaspiSonos/raspisonos-api.jar
 
 echo Set up the systemctl unit for raspisonos-api
-cp /var/tmp/RaspiSonos/raspisonos-api.sh /home/pi/RaspiSonos/
-cp /var/tmp/RaspiSonos/RaspiSonos-API.service /usr/lib/systemd/system/
+cp /var/tmp/RaspiSonos/setup/raspisonos-api.sh /home/pi/RaspiSonos/
+cp /var/tmp/RaspiSonos/setup/RaspiSonos-API.service /usr/lib/systemd/system/
 systemctl daemon-reload
 systemctl enable RaspiSonos-API
 systemctl start RaspiSonos-API
