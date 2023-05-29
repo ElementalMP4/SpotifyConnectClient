@@ -8,3 +8,5 @@ rm -rf /home/pi/RaspiSonos
 
 rm /usr/lib/systemd/system/RaspiSonos-API.service
 rm /usr/lib/systemd/system/LibrespotJava.service
+
+systemctl daemon-reload
