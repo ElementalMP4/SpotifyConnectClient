@@ -12,7 +12,7 @@ public class PlayerService {
     private static final String LIBRESPOT_URL = "http://localhost:24879/";
 
     public void pausePlay() {
-        httpClientService.post(LIBRESPOT_URL + "player/pause-play");
+        httpClientService.post(LIBRESPOT_URL + "player/play-pause");
     }
 
     public void next() {
