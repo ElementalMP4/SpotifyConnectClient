@@ -5,7 +5,7 @@ mkdir -p /opt/spotify
 
 echo Pull things from git
 
-git clone https://github.com/ElementalMP4/spotify /var/tmp/spotify
+git clone https://github.com/ElementalMP4/SpotifyConnectClient /var/tmp/spotify
 git clone https://github.com/ElementalMP4/librespot-java /var/tmp/librespot-java
 
 echo Build librespot-java
