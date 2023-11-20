@@ -1,12 +1,8 @@
-systemctl stop RaspiSonos-API
-systemctl stop LibrespotJava
+systemctl stop librespot
+systemctl disable librespot
 
-systemctl disable RaspiSonos-API
-systemctl disable LibrespotJava
+rm -rf /opt/spotify
 
-rm -rf /root/RaspiSonos
-
-rm /usr/lib/systemd/system/RaspiSonos-API.service
-rm /usr/lib/systemd/system/LibrespotJava.service
+rm /usr/lib/systemd/system/librespot.service
 
 systemctl daemon-reload

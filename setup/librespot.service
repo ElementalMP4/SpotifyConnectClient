@@ -3,7 +3,7 @@ Description=Librespot Java Service
 After=network.target
 [Service]
 Type=simple
-ExecStart=/bin/bash /root/RaspiSonos/librespot-java.sh
+ExecStart=/bin/bash /opt/spotify/librespot.sh
 ExecStop=/bin/kill -15 $MAINPID
 SuccessExitStatus=143
 Restart=always
